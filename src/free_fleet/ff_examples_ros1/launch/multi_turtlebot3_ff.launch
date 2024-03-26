@@ -79,6 +79,6 @@
 
   <!-- launch the overall visualization on rviz -->
   <node pkg="rviz" type="rviz" name="rviz" required="true"
-        args="-d $(find ff_examples_ros1)/rviz/multi_turtlebot3_ff.rviz"/>
+        args="-d $(find ff_examples_ros1)/rviz/demo.rviz"/>
   
 </launch>
