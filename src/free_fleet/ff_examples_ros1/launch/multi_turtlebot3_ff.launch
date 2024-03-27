@@ -9,7 +9,7 @@
 
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" 
-      args="$(find ff_examples_ros1)/maps/map1.yaml">
+      args="$(find ff_examples_ros1)/maps/newmap.yaml">
     <param name="frame_id" value="$(arg set_map_frame)"/>
   </node>
 
@@ -23,9 +23,9 @@
       <arg name="set_scan_frame" value="$(arg tb3_0_prefix)/base_scan"/>
       <arg name="set_map_frame" value="$(arg set_map_frame)"/>
       <arg name="open_rviz" value="false"/>
-      <arg name="initial_pose_x" default="-6.28"/>
-      <arg name="initial_pose_y" default="-5.99"/>
-      <arg name="initial_pose_a" default="1.6"/>
+      <arg name="initial_pose_x" default="1.4236"/>
+      <arg name="initial_pose_y" default="0.48"/>
+      <arg name="initial_pose_a" default="1.55"/>
     </include>
   </group>
 
@@ -40,9 +40,9 @@
       <arg name="set_scan_frame" value="$(arg tb3_1_prefix)/base_scan"/>
       <arg name="set_map_frame" value="$(arg set_map_frame)"/>
       <arg name="open_rviz" value="false"/>
-      <arg name="initial_pose_x" default="-5.32"/>
-      <arg name="initial_pose_y" default="-6.02"/>
-      <arg name="initial_pose_a" default="1.6"/>
+      <arg name="initial_pose_x" default="2.65"/>
+      <arg name="initial_pose_y" default="0.48"/>
+      <arg name="initial_pose_a" default="1.55"/>
 
     </include>
   </group>
