@@ -98,4 +98,8 @@
   <node pkg="rviz" type="rviz" name="rviz" required="true"
         args="-d $(find ff_examples_ros1)/rviz/demo.rviz"/>
   
+  <node pkg="tf2_ros" type="static_transform_publisher" name="tb3_0_map_to_map_broadcaster"
+        args="0 0 0 0 0 0 map tb3_0/map" />
+
+
 </launch>
