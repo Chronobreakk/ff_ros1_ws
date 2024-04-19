@@ -96,7 +96,7 @@
 
   <!-- launch the overall visualization on rviz -->
   <node pkg="rviz" type="rviz" name="rviz" required="true"
-        args="-d $(find ff_examples_ros1)/rviz/demo.rviz"/>
+        args="-d $(find ff_examples_ros1)/rviz/multi_nomap.rviz"/>
   
   <node pkg="tf2_ros" type="static_transform_publisher" name="tb3_1_map_to_map_broadcaster"
         args="0 0 0 0 0 0 map tb3_1/map" />
